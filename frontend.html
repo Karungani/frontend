@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                let name = document.getElementById('name').value;
+                if (name === '') {
+                  alert('Please enter your name');
+                  event.preventDefault();
+                }
+              });
+              function registerNow() {
+                alert('Redirecting to registration page...');
+                window.location.href = 'form-page.html';
+              }
+              
+              
+        </script>
+        <!--Meta data contains information about other information -->
+        
+        <style>
+            table,td,tr,th {
+                border: 2px solid rgb(190,100,210);
+                border-collapse:collapse;
+            }
+        </style>
+    </head>
+    <body style="background-color:aquamarine">
+    <h1><b>THE ANNUAL EVENT REGITRATION PROGRAM</b></h1>
+    <h1>Welcome to our Annual Event Registration</h1>
+    <h2><marquee direction="bi-directional" behavior="alternate" color="blue"> Online Registration Programme</marquee></h2>
+    <p style="background-color:rgb(100,150,100)">Our Annual Event Activities programme is an <i><em>exciting gathering</em></i> designed to bring together professionals, enthusiasts, and learners across various industries. Whether you're attending for networking opportunities, skill development, or simply to enjoy engaging presentations and workshops, this event has something for everyone</p>
+    
+    <p style="background-color:rgba(100,50,80,0.5)">Ready to take your skills to the next level? With online studies through various platforms, learning has never been easier or more flexible! Whether you're looking to advance in your career, explore new interests, or gain in-demand certifications, our online courses give you the tools to succeed—on your schedule.</p>
+    <a href="https://www.tutorialspoint.com">Click here for references to a tutorialspoint</a><br/>
+    <Frameset rows="30%,40%,30%">
+        <frame name="Top" src="https://www.tutorialspoint.com/HTML"/>
+        <frame name="Middle" src="https://www.tutorialspoint.com/HTML5"/>
+        <frame name="Bottom" src="http://www.tutorialspoint.com/CSS"/>
+       
+    </frameset>
+    <caption>Some of our served clients:</caption>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+        <td>Aaessa Maryam</td>
+        <td>0703142175</td>
+        <td>abc@gmail.com</td>
+        <td>Rongai</td>
+        </tr>
+        <tr>
+            <td>Amadi Msafiri</td>
+            <td>0713493806</td>
+            <td>efg@gmail.com</td>
+            <td>Buruburu</td>
+        </tr>
+        <tr>
+            <td>Mufti Menk</td>
+            <td>0785364450</td>
+            <td>hij@gmail.com</td>
+            <td>Nakuru</td>
+        </tr>
+        <tr>
+            <td>Shelton Ogari</td>
+            <td>0703143176</td>
+            <td>shlt@gmail.com</td>
+            <td>Kisii</td>
+        </tr>
+    </table>
+    <p>The &clubs;,&spades;,&hearts; and &diams;,&copy;</p>
+    <p>Visit the page below to view the Strait of Gibralter:</p>
+    <img src="https://www.shutterstock.com/image-photo/lighthouse-europa-point-gibraltar-overlooking-strait-1014140425">
+    <form aria-autocomplete="on">
+        <Label for="fname">First Name:</Label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name here" required ><br/>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name here" required ><br/>
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" placeholder="Enter your username" required ><br/>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Enter your password" required><br/>
+        <label for="phone">Telephone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br/>
+        <label for="regdate">Registration Date:</label>
+        <input type="datetime-local" id="regdate" name="regdate"><br/>
+        <label for="pts">Enter the number of points:</label>
+        <input type="number" id="pts" name="pts" step="3" min="0" max="99"><br/>
+        <p>Choose your favorite programming language:</p>
+        <input type="radio" id="html" name="favorite" value="HTML">
+        <label for="html">HTML</label><br/>
+        <input type="radio" id="python" name="favorite" value="Python">
+        <label for="python">Python</label><br/>
+        <input type="radio" id="css" name="favorite" value="CSS">
+        <label for="css">CSS</label>
+        <p>Choose your favorite vehicles:</p>
+        <input type="checkbox" id="gtr40" name="vh1" value="GTR40">
+        <label for="gtr40">GTR40</label><br/>
+        <input type="checkbox" id="nsn" name="h2" value="Nissan">
+        <label for="nsn">Nissan</label><br/>
+        <input type=checkbox id="mzd" name="v3" value="Mazda">
+        <label for="mzd">Mazda</label><br/>
+        
+        <label for="Shape">Choose your colour:</label>
+        <select id="color" name="color">
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Violet">Violet</option>
+            <option value="Grey">Grey</option>
+        </select>  <br/>
+        <input type="reset" value="reset"><br/>
+        <input type="Submit" value="Submit"><br/>
+      </form>
+    </body>
+</html>
